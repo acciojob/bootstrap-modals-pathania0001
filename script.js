@@ -14,6 +14,7 @@ function openModal() {
 
 function closeModal() {
   modal.classList.remove("show");
+//modal.classList.add("modal-backdrop");
   modal.style.display = "none";
   modal.setAttribute("aria-hidden", "true");
   modal.removeAttribute("aria-modal");
