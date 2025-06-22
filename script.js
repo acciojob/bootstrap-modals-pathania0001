@@ -2,7 +2,6 @@
   const button = document.getElementById("open-modal")
   const modal = document.getElementById("newton-modal")
   const closebtns = document.getElementsByClassName("cross");
-  const backdrop = document.getElementById("custom-class");
    Array.from(closebtns).forEach((btn)=>btn.addEventListener("click",closeModal));
    button.onclick = openModal;
 function openModal() {
@@ -10,7 +9,6 @@ function openModal() {
   modal.style.display = "block";
   modal.removeAttribute("aria-hidden");
   modal.setAttribute("aria-modal", "true");
-	backdrop.style.display = "block";
 }
 
 function closeModal() {
@@ -19,5 +17,4 @@ function closeModal() {
   modal.style.display = "none";
   modal.setAttribute("aria-hidden", "true");
   modal.removeAttribute("aria-modal");
-	 backdrop.style.display = "none";
 }
